@@ -1,0 +1,29 @@
+ul.nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+li.nav-item {
+    flex: 1 1 auto;
+    align-items: center;
+    padding: .5rem !important;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 0;
+}
+
+a.nav-link {
+    display: block;
+    text-align: center;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    background-color: #1976d2;
+    min-width: 300px;
+}
+
+a.nav-link:hover {
+    background-color: #4097ee;
+    color: black;
+}

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Firacode';
+    src: url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+div.title {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+p.username {
+    font-style: italic;
+    font-family: "FiraCode";
+    padding-right: 25px;
+}
