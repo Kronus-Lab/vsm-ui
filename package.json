@@ -10,9 +10,10 @@
     "preview": "vite preview",
     "cy:open-e2e": "cypress open --e2e --browser firefox",
     "cy:open-unit": "cypress open --component --browser firefox",
-    "cy:run-e2e": "cypress run --e2e",
-    "cy:run-unit": "cypress run --component",
-    "cy:e2e": "start-server-and-test dev http-get://localhost:5173 cy:open-e2e"
+    "cy:run-e2e": "cypress run --e2e --browser firefox",
+    "cy:run-unit": "cypress run --component --browser firefox",
+    "cy:e2e": "start-server-and-test dev http-get://localhost:5173 cy:open-e2e",
+    "cy:e2e-headless": "start-server-and-test dev http-get://localhost:5173 cy:run-e2e"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
