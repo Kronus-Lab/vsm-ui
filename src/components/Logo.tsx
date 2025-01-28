@@ -1,4 +1,4 @@
-import customlogo from '/logo.png'
+import customlogo from '../assets/logo.png'
 
 export default function Logo() {
     return (
