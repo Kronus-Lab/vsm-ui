@@ -20,12 +20,12 @@ jobs:
       run: |
           npm install
 
-    - name: Analysing the code with pylint
+    - name: Analysing the code with eslint
       run: |
           npm run lint
 
   test:
-    name: Building container
+    name: Run Cypress test against mocked APIs
     runs-on: ubuntu-latest
 
     steps:
@@ -36,6 +36,10 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 'lts/*'   
+
+    - name: Install dependencies
+      run: |
+          npm install
 
     - name: Execute tests
       run: |
