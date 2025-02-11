@@ -1,19 +1,22 @@
 {
   "name": "vsm-ui",
-  "private": true,
-  "version": "0.1.0",
+  "private": false,
+  "version": "1.0.0",
+  "license": "Apache-2.0",
   "type": "module",
+  "repository": "https://github.com/Kronus-Lab/vsm-ui",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "cypress": "start-server-and-test dev http-get://localhost:5173 cy:open-e2e",
     "cy:open-e2e": "cypress open --e2e --browser firefox",
     "cy:open-unit": "cypress open --component --browser firefox",
     "cy:run-e2e": "cypress run --e2e --browser firefox",
     "cy:run-unit": "cypress run --component --browser firefox",
-    "cy:e2e": "start-server-and-test dev http-get://localhost:5173 cy:open-e2e",
-    "cy:e2e-headless": "start-server-and-test dev http-get://localhost:5173 cy:run-e2e"
+    "cy:e2e-headless": "start-server-and-test dev http-get://localhost:5173 cy:run-e2e",
+    "license-checker": "license-checker --production --onlyAllow 'MIT;ISC;Apache-2.0;BSD-2-Clause;BSD-3-Clause' --summary"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -36,6 +39,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
+    "license-checker": "^25.0.1",
     "msw": "^2.7.0",
     "start-server-and-test": "^2.0.10",
     "typescript": "~5.6.2",
