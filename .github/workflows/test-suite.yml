@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   lint:
-    name: Typescript linting
+    name: Typescript linting and License checks
     runs-on: ubuntu-latest
     
     steps:
@@ -23,6 +23,10 @@ jobs:
     - name: Analysing the code with eslint
       run: |
           npm run lint
+
+    - name: Verifying license information
+      run: |
+          npm run license-checker
 
   test:
     name: Run Cypress test against mocked APIs
